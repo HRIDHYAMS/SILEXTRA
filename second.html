@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text with Alphabet Animation</title>
+    <link rel="stylesheet" href="secondstyle.css">
+</head>
+<body>
+    
+    <h1 id="l">Video/audio/text to ISL</h1>
+    <div id="la">
+    <h2 id="live">English audio to english text:</h2>
+    <button class="ex" id="startButton">Start Listening</button>
+    <button id="stopButton" style="display: none;">Stop Recording</button> <!-- Initially hidden -->
+    <div id="transcription"></div>
+    <h2 id="live">English text to ISL:</h2>
+    <input type="text" id="textInput" placeholder="Enter text...">
+    <button class="ex" onclick="animateText()">Convert</button>
+    <div id="animationContainer"></div>
+
+    <div id="output"></div>
+    <h2 id="live">Malayalam audio to malayalam text:</h2>
+    <button class="ex" id="startButtonMalayalam">Start Recording (Malayalam)</button>
+    <button class="ex" id="stopButtonMalayalam">Stop Recording (Malayalam)</button>
+    </div>
+    <script src="secondscript.js"></script>
+</body>
+</html>
