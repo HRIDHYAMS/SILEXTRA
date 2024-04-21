@@ -1,0 +1,72 @@
+body{
+  background-color: #838383;
+}
+#live{
+  color: #2d2c2e;
+}
+.ex{
+  cursor: pointer;
+}
+input[type=text] {
+  width: 400px;
+  height: 30px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+button {
+  background-color:   #373638;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 18px;
+}
+button:hover{
+  background-color: #68666b;
+}
+
+#la{
+background-color: #dad2e6;
+padding: 10px;
+border-radius: 10px;
+
+}
+textarea{
+  width: 1000px;
+  height: 200px;
+}
+
+#l{
+  color: #ffffff;
+  padding: 5px;
+}
+#animationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  margin-top: 10px;
+  overflow: hidden; 
+}
+
+.letterImage {
+  width: 600px;
+  height: 500px;
+  margin: 5px;
+  border: 1px solid rgb(126, 124, 128);
+  opacity: 0; 
+  animation: flyIn 0.1s ease forwards; 
+}
+
+@keyframes flyIn {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
